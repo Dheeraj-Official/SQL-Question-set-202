@@ -46,7 +46,7 @@ end
 go
 
 -- Test it
-update tblCountry set CountryName = 'Viet Nam' where CountryName = 'Vietnam';
+update tblCountry set CountryName = 'Viet Nam' where CountryName = 'china';
 insert into tblCountry (CountryName) values ('OwlLand');
 delete from tblCountry where CountryName = 'OwlLand';
 
