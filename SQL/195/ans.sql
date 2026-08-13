@@ -21,7 +21,10 @@ go
 -- end
 -- go
 
--- This fails because SQL Server needs to know the table name (and its schema/columns) at compile time, when the query plan is built — not at runtime. A variable holding a table name is just a string as far as the FROM clause parser is concerned, and T-SQL doesn't allow object identifiers to be substituted from variables directly. This is exactly the "it takes a while to accept that this can't work" moment the page mentions.
+-- This fails because SQL Server needs to know the table name (and its schema/columns) at compile time, 
+-- when the query plan is built — not at runtime. A variable holding a table name is just a string as far 
+-- as the FROM clause parser is concerned, and T-SQL doesn't allow object identifiers to be substituted from v
+-- ariables directly. This is exactly the "it takes a while to accept that this can't work" moment the page mentions.
 
 
 -- Step 3 — the working dynamic SQL version:

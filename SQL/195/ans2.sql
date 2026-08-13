@@ -5,7 +5,7 @@ create or alter proc spSelectFromTable
     @TableName varchar(max)
 as
 begin
-    declare @SQL varchar(max) = 'Select * from ' + QUOTENAME(@TableName)
+    declare @SQL varchar(max) = 'Select * from ' + @TableName
 
     exec (@SQL)
 end

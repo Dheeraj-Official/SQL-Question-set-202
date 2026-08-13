@@ -22,6 +22,6 @@ select @EventList;
 
 -- Step 2: use the list to filter tblEvent via dynamic SQL
 declare @sql varchar(max) =
-    'SELECT * FROM tblEvent WHERE EventName IN (' + @EventList + ')';
+    'SELECT * FROM tblEvent WHERE EventName IN ( ' + @EventList + ')';
 
 exec (@sql);

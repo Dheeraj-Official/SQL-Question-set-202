@@ -2,13 +2,13 @@ use Music_01
 go
 
 select
-	a.Artist
-	,dtAlbums.Albums
-	,dtNumber1Albums.Number_1_albums
-	,dtSingles.Singles
-	,dtNumber1Singles.Number_1_singles
-	,dtTours.Tours
-	,dtShows.Shows
+	a.Artist,
+	dtAlbums.Albums,
+	dtNumber1Albums.Number_1_albums,
+	dtSingles.Singles,
+	dtNumber1Singles.Number_1_singles,
+	dtTours.Tours,
+	dtShows.Shows
 from
 	dbo.Artist as a
 
